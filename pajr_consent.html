@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informed Patient Consent and Authorization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .header h2 {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #666;
+        }
+        
+        .consent-text {
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .consent-intro {
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #007acc;
+        }
+        
+        .understanding-section {
+            margin: 20px 0;
+        }
+        
+        .understanding-section p {
+            margin-bottom: 15px;
+            text-indent: 20px;
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 30px;
+        }
+        
+        .signature-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
+        
+        .signature-field {
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        .signature-field:last-child {
+            margin-right: 0;
+        }
+        
+        .signature-field label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .signature-line {
+            height: 1px;
+            background: #333;
+            margin: 20px 0 5px 0;
+        }
+        
+        .field-group {
+            margin: 20px 0;
+        }
+        
+        .field-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .field-line {
+            border-bottom: 1px solid #333;
+            min-height: 25px;
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+                font-size: 12px;
+            }
+            
+            .header h1 {
+                font-size: 18px;
+            }
+            
+            .header h2 {
+                font-size: 14px;
+            }
+        }
+        
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .download-btn:hover {
+            background: #005a9a;
+        }
+        
+        @media print {
+            .download-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn" onclick="window.print()">Print/Save as PDF</button>
+    
+    <div class="header">
+        <h1>Informed Patient Consent and Authorization</h1>
+        <h2>for sharing a de-identified case report</h2>
+    </div>
+    
+    <div class="consent-text">
+        <div class="consent-intro">
+            I give my consent and authorization for this information about <strong>MY SELF/MY WARD/MY RELATIVE</strong> (Indicate correct description) relating to my/his/her health to appear in an online E-log case record (case report) that will exist in social media such as whatsapp and facebook.
+        </div>
+        
+        <p><strong>I understand the following:</strong></p>
+        
+        <div class="understanding-section">
+            <p>Health professionals need to communicate about my problem with each other and share my detailed history as well as images of my body in clinical photographs, images of Radiology and other test reports. In the past this was routinely done using paper based files and in the electronic age as it is faster to communicate using electronic devices connected online, this is how my history and images will be shared, as an E-log case report (other than the paper based file system that may still continue).</p>
+            
+            <p>My information will be published online by my health-professionals without revealing my identity or any personal information such as identifiable names and numbers like phone numbers, PAN number, UID numbers etc., and Email addresses or house addresses and the professionals in the online forums will make every attempt to ensure my anonymity addressing me solely by my anonymized user-name.</p>
+            
+            <p>I understand, however, that complete anonymity cannot be guaranteed. It is possible that after reading the E-log case report, somebody somewhere - perhaps, for example, somebody who looked after me if I was in hospital or a relative-may identify me. The information that will be visible online will be the existing information that I provide in the form of patient input and new information will be added by many professionals processing my patient inputs in the online forum.</p>
+            
+            <p>The information may be published in online forums such as in whatsapp and facebook as well as in associated journals on paper as well as a blog in the internet as an E-log case report and will be distributed worldwide.</p>
+            
+            <p>Information displayed in the E-log forum is not supposed to replace advice from the primary physician of the patient and my primary physician in charge will continue to look after me and make his own responsible decisions about my treatment.</p>
+            
+            <p><strong>The above information was explained to me in the language I understand.</strong></p>
+        </div>
+    </div>
+    
+    <div class="signature-section">
+        <div class="signature-row">
+            <div class="signature-field">
+                <label>Name & Signature of Consent Giver</label>
+                <div class="signature-line"></div>
+            </div>
+            <div class="signature-field">
+                <label>Signature of Guardian/Relative</label>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+        
+        <div class="signature-row">
+            <div class="signature-field">
+                <label>Name & Designation of Consent Taker</label>
+                <div class="signature-line"></div>
+            </div>
+            <div class="signature-field">
+                <label>(Anonymized Identifier)</label>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+        
+        <div class="field-group">
+            <label>Address:</label>
+            <div class="field-line"></div>
+            <div class="field-line"></div>
+        </div>
+        
+        <div class="field-group">
+            <label>Mobile No:</label>
+            <div class="field-line"></div>
+        </div>
+    </div>
+</body>
+</html>
